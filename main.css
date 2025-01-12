@@ -1,0 +1,25 @@
+body {
+    font-family: monospace; 
+
+}
+
+img {
+    height: 200px;
+
+}
+
+.sports{
+    color: green
+}
+
+.economy{
+    color: blue
+}
+
+.technology{
+    color: red
+}
+
+.entertainment{
+    color: yellow
+}
