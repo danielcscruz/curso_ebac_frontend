@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card{
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+    display: block;
+    align-items: center;
+    background-color: rgb(222, 222, 222);
+    border-radius: 5px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+form input{
+    border: none;
+    border-bottom: 1px solid #494949;
+    height: 30px;
+
+}
+
+form button{
+    width: 30%;
+    text-align: center;
+    margin: 15px auto;
+    height: 30px;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #e8e4e4;
+
+}
+
+form button:hover{
+    background-color: rgb(112, 113, 112);
+}
+
+.lista{
+        max-width: 600px;
+        width: 100%;
+        padding: 20px;
+        margin: 20px auto;
+        display: block;
+        align-items: center;
+        background-color: rgb(210, 210, 210);
+        border-radius: 5px;
+
+}
+
+.lista ul li{
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.checked{
+    text-decoration: line-through;
+}
