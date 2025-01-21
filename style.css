@@ -1,0 +1,200 @@
+*{
+    font-family: "Tiny5", serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('img/sky.jpeg');
+    background-size: auto 100%; /* Adjusts the height to match the nav section */
+    background-repeat: repeat-x; /* Repeats the image horizontally */
+}  
+
+header h1{
+    margin: 0 20px;
+    color: #e0e0e0;
+    color: rgb(49, 64, 226);
+    font-size: 3em;
+
+}
+
+nav ul {
+    margin: 0 20px;
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li {
+    margin-left: 20px;
+    
+}
+nav ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #312e43;
+    font-size: 1.5em;
+
+}
+.sobre{
+    width: 80%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 49% 49%;     
+    column-gap: 2%; 
+    align-items: center;
+    justify-content: center;
+}
+
+.listagem{
+    width: 80%;
+    margin: 5% auto;
+}
+.sobre h1,
+.listagem h1 {
+    color: rgb(49, 64, 226);
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(49, 64, 226);
+
+}
+.sobre img{
+    height: 300px;
+    width: auto;
+}
+
+.produtos{
+    width: 80%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 24.25% 24.25% 24.25% 24.25% ;     
+    column-gap: 1%;   
+    list-style-type: none;
+}
+
+.produtos li{
+    list-style-type: none;
+}
+
+.card{
+    background-color: bisque;
+    border: 1px dashed  #575757;
+    display: flex;
+    flex-direction: column; /* Ensures elements stack vertically */
+    justify-content: center; /* Centers elements horizontally */
+    align-items: center; /* Centers elements vertically */
+    text-align: center; 
+    margin: 10%;
+}
+
+.card img{
+    height: auto;
+    width: 80%;
+    object-fit: cover;
+    
+}
+.card h3, p, button{
+    margin: 0.5em;
+}
+
+footer{
+    background-color: rgb(49, 64, 226);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e0e0e0;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-image: url('img/ground.jpeg');
+    background-size: auto 100%; /* Adjusts the height to match the nav section */
+    background-repeat: repeat-x;
+}
+
+
+footer button{
+    height: 25%;
+}
+
+footer form input{
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+
+button {
+    background-color: #92CD41;
+    border: 2px solid #000;
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 80%;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out;
+    margin: 20px;
+    image-rendering: pixelated; /* Ensures the button looks pixelated */
+}
+
+footer button{
+    background-color: #ffcc00;
+
+}
+button:active {
+    box-shadow: 2px 2px 0 #000;
+    transform: translate(2px, 2px);
+}
+
+
+@media screen and (max-width: 640px) {
+    header h1{
+        font-size: 2em;
+    }
+    nav ul li a {
+        font-size: 1em;
+    }
+    .sobre img{
+        height: 200px;
+        width: auto;
+    }
+    .wrapper{
+        width: 90%;
+    }
+    .sobre{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    .produtos{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        margin: 5%;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .produtos{
+        grid-template-columns: 1fr 1fr;
+    }
+    .sobre img{
+        height: 250px;
+        width: auto;
+    }
+}
+
