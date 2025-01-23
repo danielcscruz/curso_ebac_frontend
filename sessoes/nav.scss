@@ -1,0 +1,17 @@
+@use '../config/cores';
+
+.menu {
+    display: flex;
+
+    li {
+        font-weight: bold;
+        margin-left: 24px;
+
+        a {
+            color: cores.$corTextoBranco;
+            text-decoration: none;
+        }
+        
+    }
+
+}
