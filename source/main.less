@@ -1,0 +1,61 @@
+@import 'config/cores.less';
+@import 'config/reset.less';
+@import 'sessoes/nav.less';
+@import 'sessoes/produtos.less';
+
+@smartphone: ~"@media screen and (max-width: 767px)";
+@tablet: ~"@media screen and (min-width: 768px) and (max-width: 1023px)";
+
+body {
+    background-color: @cores[corFundo];
+}
+
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: @cores[corPrincipal];
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+    }
+}
+
+section {
+    padding: 56px 0;
+}
+
+@{tablet} {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@{smartphone} {
+    .products {
+        display: block;
+    }
+
+    .product-item {
+        margin-bottom: 32px;
+    }
+}
